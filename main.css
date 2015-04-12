@@ -1,6 +1,6 @@
 html {
-  background-color: #656FE5;
-  color: #B0BDE5;
+  background-color: #98AAE5;
+  color: #22367F;
 }
 
 /*nav bar css*/
@@ -27,6 +27,11 @@ div.svg-map img {
     border: none;
     display: block;
     margin: 0 auto;
+}
+
+.center {
+  width: 25%;
+  margin: 0 auto;
 }
 
 

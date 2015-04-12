@@ -2,7 +2,7 @@
 
 ### Purpose
 
-Demeter was created during the Space Apps Challenge 2015 in NYC for the Food Directions challenge. Our goal is to raise awareness of issues surrounding food security.
+Demeter was created during the Space Apps Challenge 2015 in NYC for the Food Directions challenge. Our goal is to raise awareness of issues surrounding food security. We are using IBM Bluemix for Database and Hosting. 
 
 ### Team members
 
@@ -14,4 +14,3 @@ Demeter was created during the Space Apps Challenge 2015 in NYC for the Food Dir
 - [Regine Gilbert](https://github.com/regineg)
 
 ### Technologies Used
-

@@ -42,9 +42,13 @@ a, a:focus, a:hover {
   border-radius:0;
 }
 section{
-  width:100%;
+
+}
+
+#resources, #contact, #about {
+  padding-top: 5% ;
+  width: 100%;
   display: table;
-  margin: 0;
   height: 100vh;
   background: #DCDCDC;
 }
@@ -210,7 +214,7 @@ section{
 }
 .mid-event{
   margin-bottom: 55px;
-  
+
 }
 .mid-event:nth-child(even){
   /*direction: rtl;*/

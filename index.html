@@ -12,25 +12,20 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.js"></script>
 <script>
-    $(function() {
+    $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
 
-    $('.down').click(function() {
-        $('html,body').animate({
-          scrollTop: $("section.mission").offset().top
-        }, 600);
+        var target = this.hash;
+        var $target = $(target);
 
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
     });
-
-
-    $("a").click(function() {
-    var id = $(this).attr("href")
-    $('html,body').animate({
-            scrollTop: $(id).offset().top},
-        'slow');
-    });
-
-
-  });
+});
 </script>
 
 </head>
@@ -45,7 +40,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="active" href="#about" target="_blank">Home</a></li>
+                    <li><a class="active" href="#home" target="_blank">Home</a></li>
                     <li><a href="#about" target="_blank">About</a></li>
                     <li><a href="#resources" target="_blank">Resources</a></li>
                     <li><a href="#contact" target="_blank">Contact</a></li>
@@ -402,10 +397,28 @@
 </section>
 
 <section id="about">
+    <div class="container">
+        <h1 class="text-center">About This Project</h1>
+        <p style="font-size: 26px;">Born in 2015, Demetr helps to connect people around the world in conversation about awarness of food production and distribution. We look to develop communities with the ultimate goal of improving the lives of those impacted by hunger</p>
+        <p style="font-size: 26px;">Demeter provides data-driven maps that "sees" food availability in countries around the world to raise social awareness about world hunger. It provides a platform for Global Community Building to have these important discussions.</p>
+        <p style="font-size: 26px;">Created by:</p>
+        <ul style="font-size: 26px;">
+            <li>Regine Gilbert</li>
+            <li>Jacob Lee</li>
+            <li>Kristen MacFarlane</li>
+            <li>Finn Pike</li>
+            <li>Saleemah Speller</li>
+        </p>
+
+    </div>
 
 </section>
 
 <section id="resources">
+    <div class="container">
+        <h1 class="text-center">Resources</h1>
+    </div>
+
 
 </section>
 

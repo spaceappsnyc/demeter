@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Demeter</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+<meta charset="utf-8">
+<title>Demetr | Raising Social Awareness</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
 </head>
 <body>
-
-<ul class="menu">
-  <li><a href="index.html" class="active"><span>Demeter</span></a></li>
-  <li><a href="about.html"><span>About Us</span></a></li>
-  <li><a href="contact.html"><span>Contact Us</span></a></li>
-  <li><a href="sign_in.html"><span>Sign In</span></a></li>
-  <li><a href="sign_up.html"><span>Sign Up</span></a></li>
-</ul>
-
-<div class="header">
-  <h1 class="mission">Raising Social Awareness</h1>
-  <h3 class="tagline">Increasing awareness, one click at a time.</h3>
-</div>
-
-<div id="wrapper" style="width:100%">
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
-<svg version="1.2" baseProfile="tiny" id="world" xmlns:svg="http://www.w3.org/2000/svg"
+<section id ="home">
+    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Demetr</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active" href="#home" target="_blank">Home</a></li>
+                    <li><a href="#about" target="_blank">About</a></li>
+                    <li><a href="#resources" target="_blank">Resources</a></li>
+                    <li><a href="#contact" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <svg version="1.2" baseProfile="tiny" id="world" xmlns:svg="http://www.w3.org/2000/svg"
  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="950px" height="620px"
  viewBox="0 0 950 620" xml:space="preserve">
 <path id="kalimantan" d="M781.68,324.4l-2.31,8.68l-12.53,4.23l-3.75-4.4l-1.82,0.5l3.4,13.12l5.09,0.57l6.79,2.57v2.57l3.11-0.57l4.53-6.27v-5.13l2.55-5.13l2.83,0.57l-3.4-7.13l-0.52-4.59L781.68,324.4L781.68,324.4z"/>
@@ -367,30 +393,54 @@
 <path id="crete" d="M516.76,230.59l1.63,0.05l0.68,1.01h2.37l1.58-0.58l0.53,0.64l-1.05,1.38l-4.63,0.16l-0.84-1.11l-0.89-0.53L516.76,230.59L516.76,230.59z"/>
 </svg>
 </div>
+</section>
 
-<div id="wrapper" style="width:100%">
-  <div class="instructions-container center">
-    <p><strong>How it works</strong></p>
-    <ol class="instructions">
-      <li>Select two countries.</li>
-      <li>Start a conversation.</li>
-      <li>Inform others of food security issues.</li>
-    </ol>
-</div>
-</div>
+<section id="about">
+    <div class="container">
+        <h1 class="text-center">About This Project</h1>
+        <p style="font-size: 26px;">Born in 2015, Demetr helps to connect people around the world in conversation about awarness of food production and distribution. We look to develop communities with the ultimate goal of improving the lives of those impacted by hunger</p>
+        <p style="font-size: 26px;">Demeter provides data-driven maps that "sees" food availability in countries around the world to raise social awareness about world hunger. It provides a platform for Global Community Building to have these important discussions.</p>
+        <p style="font-size: 26px;">Created by:</p>
+        <ul style="font-size: 26px;">
+            <li>Regine Gilbert</li>
+            <li>Jacob Lee</li>
+            <li>Kristen MacFarlane</li>
+            <li>Finn Pike</li>
+            <li>Saleemah Speller</li>
+        </p>
+
+    </div>
+
+</section>
+
+<section id="resources">
+    <div class="container">
+        <h1 class="text-center">Resources</h1>
+    </div>
+
+
+</section>
+
+<section id="contact">
+        <form id="mc-form" class="col-lg-4 col-lg-offset-4 col-sm-8 col-sm-offset-2 col-xs-12" name="mc-embedded-subscribe-form" >
+    <label for="mc-email" style="text-align:center; width:100%;"></label>
+    <div class="signup">
+    <input type="email" value="" name="EMAIL" class="email-box" id="mc-email" placeholder="Email" required>
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_52bc0e6e32bec631473d3dab8_2eb2cae510" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="email-btn"></div>
+    </div>
+      </form>
+</section>
 
     <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
     <script>
-
     var country1 = "";
     var country2 = "";
-
     d3.select("svg#world").selectAll("path")
         .on("click", function() {
                 country = d3.select(this)
                 //console.log(country[0][0].getAttribute("id"))
-
                 //clear the previous
                 if (country1 != "" && country2 != ""){
                     d3.select("path#"+country1).attr("fill", "black");
@@ -398,7 +448,6 @@
                     country1 = "";
                     country2 = "";
                 }
-
                 //set the current
                 if (country1 == ""){
                     country.attr("fill", "blue")
@@ -408,9 +457,7 @@
                     country2 = country[0][0].getAttribute("id")
                     console.log("Look up:" + country1 + " and " + country2);
                 }
-
             })
     </script>
-
 </body>
 </html>

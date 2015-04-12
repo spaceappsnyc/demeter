@@ -1,6 +1,8 @@
 ---
 applications:
-- name:    flask-sample
-  host:    flask-sample-pjm
+- name:    demeter
+  host:    demetr
+  instances: 1
+  domain: mybluemix.net
   memory:  128M
   command: python app.py

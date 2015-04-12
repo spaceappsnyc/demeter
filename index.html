@@ -30,6 +30,7 @@
 
 </head>
 <body>
+
 <section id ="home">
     <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -417,6 +418,13 @@
 <section id="resources">
     <div class="container">
         <h1 class="text-center">Resources</h1>
+        <h3 class="text-center">Check out this resources to learn more about the topic and to guide your discussions.</h3>
+        <ul style="font-size: 26px;">
+            <li><a href="http://data.worldbank.org/indicator/AG.PRD.FOOD.XD/countries?display=map">Food production by country, using data from the World Bank</a></li>
+            <li><a href="http://data.worldbank.org/indicator/TX.VAL.FOOD.ZS.UN">Information regarding percentage of the world's food exports</a></li>
+            <li><a href="http://faostat.fao.org/site/339/default.aspx ">View graphs for commodities by country from the Food and Agriculture Organizations of the UN (includes downloadable data)</a></li>
+        </ul>
+
     </div>
 
 
@@ -458,6 +466,7 @@
                     country2 = country[0][0].getAttribute("id")
                     console.log("Look up:" + country1 + " and " + country2);
                 }
+                $("#comments").removeClass("hidden");
             })
     </script>
 </body>

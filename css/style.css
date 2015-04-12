@@ -41,8 +41,9 @@ a, a:focus, a:hover {
 .thumbnail{
   border-radius:0;
 }
-section{
 
+.hidden {
+  display: none;
 }
 
 #resources, #contact, #about {
